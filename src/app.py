@@ -1,7 +1,8 @@
 """Gradio chat UI (Hebrew, RTL).
 
-Stage 3: the UI calls the Actor directly. In stage 5 the call is replaced by
-the Actor -> Critic -> revision loop.
+Every question goes through the Actor -> Critic -> revision loop (src/loop.py).
+Only the user messages and the final message of each question are shown and
+kept in the conversation history; drafts and feedback go to the audit log.
 
 Run from the project root:  python -m src.app
 """
@@ -10,8 +11,9 @@ from __future__ import annotations
 import gradio as gr
 
 from src import config
-from src.actor import History, generate
+from src.actor import History
 from src.background import load_background
+from src.loop import QuestionResult, handle_question
 
 BACKGROUND = load_background()
 
@@ -21,9 +23,14 @@ textarea { direction: rtl; text-align: right; }
 """
 
 
-def answer_question(question: str, history: History) -> str:
-    """Produce the final answer shown to the user (stage 3: Actor only)."""
-    return generate(question, history, background=BACKGROUND)
+def answer_question(question: str, history: History) -> QuestionResult:
+    """Run the full loop for one question."""
+    result = handle_question(question, history, background=BACKGROUND)
+    # Console trace until the audit log is added in stage 6
+    print(f"[{result.status}] {question!r} -> {len(result.attempts)} attempt(s)")
+    for a in result.attempts:
+        print(f"   #{a.attempt} acceptable={a.is_acceptable} feedback={a.feedback} error={a.error}")
+    return result
 
 
 def on_submit(message: str, history: History):
@@ -36,10 +43,7 @@ def on_submit(message: str, history: History):
     if not message:
         return "", history, history
 
-    try:
-        reply = answer_question(message, history)
-    except Exception as exc:  # stage 5 replaces this with the loop's error handling
-        reply = f"⚠️ אירעה שגיאה טכנית ולא התקבלה תשובה. ({type(exc).__name__})"
+    reply = answer_question(message, history).message
 
     history = history + [
         {"role": "user", "content": message},
@@ -54,7 +58,7 @@ def build_ui() -> gr.Blocks:
             "## צ'אט עם לביא זנזורי\n"
             "שאלו על לימודים, ניסיון, מיומנויות או פרויקטים. "
             f"התשובות מבוססות על פרופיל ה-LinkedIn ועל סיכום אישי בלבד.  \n"
-            f"<small>מודל: {config.ACTOR_MODEL}</small>",
+            f"<small>Actor: {config.ACTOR_MODEL} · Critic: {config.CRITIC_MODEL}</small>",
             rtl=True,
         )
         history_state = gr.State([])
