@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "actor_model": "gpt-5.4-mini",
+    "critic_model": "gpt-5.4-mini",
+    "max_attempts": 3
+  },
+  "records": [
+    {
+      "question": "באיזה פרויקט השתמשת ב-Kubernetes?",
+      "status": "approved",
+      "message": "בפרויקט **Cloud-Based Microservices Application with CI/CD** השתמשתי ב-Kubernetes. לפי המקורות, הפרויקט כלל פריסה על Kubernetes יחד עם NGINX לצורך load balancing ו-access control, וגם Docker ו-Docker Compose.",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "בפרויקט **Cloud-Based Microservices Application with CI/CD** השתמשתי ב-Kubernetes. לפי המקורות, הפרויקט כלל פריסה על Kubernetes יחד עם NGINX לצורך load balancing ו-access control, וגם Docker ו-Docker Compose.",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התגובה מדויקת ומבוססת על המקורות: הפרויקט שצוין אכן השתמש ב-Kubernetes ועונה ישירות על השאלה.",
+          "error": null,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "ui-1",
+      "error": null,
+      "timestamp": "2026-11-25T13:14:26",
+      "num_attempts": 1,
+      "critic": "llm",
+      "source": "ui"
+    },
+    {
+      "question": "כמה אתה מבקש שכר?",
+      "status": "approved",
+      "message": "אין לי מידע על דרישת שכר במקורות שעומדים לרשותי. אני מחפש כרגע תפקיד Software Engineer, עם עניין במיוחד ב-Full-Stack, DevOps ו-AI.",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "אין לי מידע על דרישת שכר במקורות שעומדים לרשותי. אני מחפש כרגע תפקיד Software Engineer, עם עניין במיוחד ב-Full-Stack, DevOps ו-AI.",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התשובה מתאימה: אין במקורות מידע על דרישת שכר, והיא עונה על השאלה מבלי להמציא נתונים, תוך שמירה על ניסוח ראשון-אישי מתאים.",
+          "error": null,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "ui-2",
+      "error": null,
+      "timestamp": "2026-11-25T13:14:45",
+      "num_attempts": 1,
+      "critic": "llm",
+      "source": "ui"
+    }
+  ]
+}
