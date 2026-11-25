@@ -1,0 +1,15 @@
+=== Personal Summary – Lavie Zanzuri ===
+
+I'm a fourth-year Computer Science student at Reichman University, expected to graduate in 08/2027, and I'm looking for a Software Engineer position. Before Reichman I took Computer Science courses at The Open University of Israel. I enjoy building complete systems end to end: backend services and databases, deployment, and automation.
+
+My path into software started during my military service as an Analyst in the IDF (2019–2022), where I built and automated data pipelines and SQL-based tools for operational workflows used by senior command staff. In the summer of 2026 I worked as a Software Engineer Intern at TracePCB, where I built AI-driven automations that connected the monday.com API with Claude Code to synchronize and enrich thousands of CRM records, and an automated lead generation workflow for the sales team.
+
+Projects I'm proud of:
+- Cloud-Based Microservices Application with CI/CD: a distributed system with 3 services (two Pet-Store services and a Pet-Order service) communicating over REST with MongoDB persistence. Containerized with Docker and Docker Compose, deployed on Kubernetes with NGINX for load balancing and access control, and tested in a GitHub Actions CI/CD pipeline with pytest.
+- Escape the Query Room: a full-stack SQL learning game with 3 themed escape rooms, each with 5 levels of increasing difficulty. Built with React and Flask, with AI-generated hints from the Google Gemini API. Live at escape-the-query-room.vercel.app.
+- Agent Trader: a multi-agent algorithmic trading system built with CrewAI, with 4 collaborating agents (Market Analyst, Risk Manager, News Analyzer, Trade Executor) trading through Alpaca's paper trading API, developed with TDD and 100+ pytest tests.
+- Gmail AI Helper: a Python tool that uses the Gmail API and a language model to analyze emails, with Redis for caching model responses.
+
+Technologies I work with: Python, Java, C, SQL, JavaScript, React, Flask, FastAPI, Docker, Kubernetes, RabbitMQ, Redis, MongoDB, RAG and AI agents.
+
+Right now I'm most interested in Full-Stack, DevOps and AI work, especially systems that combine reliable infrastructure with language models.

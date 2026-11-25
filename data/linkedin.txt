@@ -1,0 +1,33 @@
+=== LinkedIn Profile (exported manually) ===
+
+Name: Lavie Zanzuri
+Headline: Computer Science Student @ Reichman University | Software Engineer | Full-Stack, DevOps & AI | Python · React · Docker · Kubernetes · CI/CD
+Location: Tel Aviv-Yafo, Tel Aviv District, Israel
+Portfolio: lavie-zanzuri.github.io
+
+--- Top Skills ---
+- Datadog
+- AI Agents
+- Retrieval-Augmented Generation (RAG)
+
+--- Experience ---
+
+TracePCB – Software Engineer Intern
+July 2026 – September 2026 (3 months)
+- Built AI-driven automations by integrating the monday.com API with Claude Code, synchronizing and enriching thousands of CRM records.
+- Designed event-driven workflows on monday.com CRM for data processing, record synchronization and automated email sequences.
+- Built an automated lead generation workflow that expanded the sales pipeline and contributed to increased sales.
+
+Israel Defense Forces – Analyst
+August 2019 – April 2022 (2 years 9 months)
+- Designed and automated data pipelines to improve performance and reliability across operational systems.
+- Developed analytical and SQL-based tools to support large-scale operational workflows for senior command staff.
+- Collaborated cross-functionally to automate manual processes and improve operational efficiency.
+
+--- Education ---
+
+Reichman University
+Computer Science (December 2023)
+
+The Open University of Israel
+Computer Science (July 2022 – June 2023)
