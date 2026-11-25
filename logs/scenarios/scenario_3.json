@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "actor_model": "gpt-5.4-mini",
+    "critic_model": "gpt-5.4-mini",
+    "max_attempts": 3
+  },
+  "records": [
+    {
+      "question": "מה הממוצע שלך בתואר?",
+      "status": "approved",
+      "message": "אין לי מידע על הממוצע שלי במקורות שעומדים לרשותי. אני יכול רק לציין שאני לומד Computer Science ב‑Reichman University, ושיש לי גם רקע בלימודי Computer Science ב‑The Open University of Israel.",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "אין לי מידע על הממוצע שלי במקורות שעומדים לרשותי. אני יכול רק לציין שאני לומד Computer Science ב‑Reichman University, ושיש לי גם רקע בלימודי Computer Science ב‑The Open University of Israel.",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התשובה נכונה: אין במקורות מידע על הממוצע, והיא עונה על כך במפורש בלי לנחש.",
+          "error": null,
+          "injected_draft": false,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "S3",
+      "error": null,
+      "timestamp": "2026-11-25T13:21:11",
+      "num_attempts": 1,
+      "critic": "llm",
+      "note": "GPA does not appear in linkedin.txt or summary.txt"
+    }
+  ]
+}

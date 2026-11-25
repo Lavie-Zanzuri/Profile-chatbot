@@ -36,6 +36,7 @@ class AttemptRecord:
     is_acceptable: bool | None = None     # None when the evaluation was not completed
     feedback: str | None = None
     error: str | None = None
+    injected_draft: bool = False          # True if this candidate was a forced test draft
 
 
 @dataclass
@@ -61,8 +62,13 @@ def handle_question(
     max_attempts: int | None = None,
     background: str | None = None,
     scenario_id: str | None = None,
+    forced_first_draft: str | None = None,
 ) -> QuestionResult:
-    """Run the loop for one question. The attempt counter starts at 1 for every question."""
+    """Run the loop for one question. The attempt counter starts at 1 for every question.
+
+    forced_first_draft: test hook (scenario 4). If given, it replaces the Actor's
+    first draft; the Critic and all later revisions still use the language model.
+    """
     max_attempts = max_attempts or config.MAX_ATTEMPTS
     attempts: list[AttemptRecord] = []
     rejected_answer: str | None = None
@@ -80,10 +86,14 @@ def handle_question(
 
     for n in range(1, max_attempts + 1):
         # 1 / 4. Generate (first draft, or a revision using the rejected answer + feedback)
+        injected = n == 1 and forced_first_draft is not None
         try:
-            candidate = generate_fn(
-                question, history, rejected_answer, feedback, background=background
-            )
+            if injected:
+                candidate = forced_first_draft
+            else:
+                candidate = generate_fn(
+                    question, history, rejected_answer, feedback, background=background
+                )
         except Exception as exc:
             reason = f"Actor call failed: {type(exc).__name__}: {exc}"
             attempts.append(AttemptRecord(n, None, evaluation_completed=False, error=reason))
@@ -96,12 +106,14 @@ def handle_question(
                 raise TypeError(f"expected Evaluation, got {type(ev).__name__}")
         except Exception as exc:
             reason = f"{type(exc).__name__}: {exc}"
-            attempts.append(AttemptRecord(n, candidate, evaluation_completed=False, error=reason))
+            attempts.append(AttemptRecord(
+                n, candidate, evaluation_completed=False, error=reason, injected_draft=injected
+            ))
             return stop_with_error(reason)
 
         attempts.append(AttemptRecord(
             n, candidate, evaluation_completed=True,
-            is_acceptable=ev.is_acceptable, feedback=ev.feedback,
+            is_acceptable=ev.is_acceptable, feedback=ev.feedback, injected_draft=injected,
         ))
 
         # 3. Approved -> done

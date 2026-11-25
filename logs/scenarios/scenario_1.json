@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "actor_model": "gpt-5.4-mini",
+    "critic_model": "gpt-5.4-mini",
+    "max_attempts": 3
+  },
+  "records": [
+    {
+      "question": "באיזו חברה עשית התמחות ומה עשית שם?",
+      "status": "approved",
+      "message": "עשיתי התמחות ב-TracePCB כ-Software Engineer Intern, בין יולי 2026 לספטמבר 2026. שם בניתי אוטומציות מבוססות AI שחיברו בין monday.com API ל-Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, ותכננתי workflows מונעי-אירועים ב-monday.com ל-processing, סנכרון רשומות ושליחת רצפי מיילים אוטומטיים. בנוסף, בניתי workflow אוטומטי ל-generating לידים שסייע להרחיב את ה-sales pipeline.",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "עשיתי התמחות ב-TracePCB כ-Software Engineer Intern, בין יולי 2026 לספטמבר 2026. שם בניתי אוטומציות מבוססות AI שחיברו בין monday.com API ל-Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, ותכננתי workflows מונעי-אירועים ב-monday.com ל-processing, סנכרון רשומות ושליחת רצפי מיילים אוטומטיים. בנוסף, בניתי workflow אוטומטי ל-generating לידים שסייע להרחיב את ה-sales pipeline.",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התשובה מדויקת ומבוססת על המקורות: היא עונה ישירות על החברה ומה עשיתי שם, בלי להוסיף פרטים לא נתמכים.",
+          "error": null,
+          "injected_draft": false,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "S1",
+      "error": null,
+      "timestamp": "2026-11-25T13:20:59",
+      "num_attempts": 1,
+      "critic": "llm",
+      "supporting_source": "linkedin.txt, Experience: 'TracePCB – Software Engineer Intern', July 2026 – September 2026, and its 3 bullets"
+    }
+  ]
+}

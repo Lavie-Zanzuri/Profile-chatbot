@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "actor_model": "gpt-5.4-mini",
+    "critic_model": "gpt-5.4-mini",
+    "max_attempts": 3
+  },
+  "records": [
+    {
+      "question": "באילו חברות עבדת?",
+      "status": "approved",
+      "message": "עבדתי ב-TracePCB ובצה\"ל (Israel Defense Forces).",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "עבדתי כמתמחה ב-TracePCB, ולפני כן עבדתי שנתיים כמפתח Backend בחברת Wix, שם הובלתי צוות של חמישה מפתחים.",
+          "evaluation_completed": true,
+          "is_acceptable": false,
+          "feedback": "The answer includes unsupported and incorrect claims: \"מפתח Backend בחברת Wix\" and \"הובלתי צוות של חמישה מפתחים\" do not appear in the sources. Criterion A is violated. Please answer only with the companies actually listed in the sources: TracePCB and the Israel Defense Forces.",
+          "error": null,
+          "injected_draft": true,
+          "decision": "rejected"
+        },
+        {
+          "attempt": 2,
+          "candidate": "עבדתי ב-TracePCB ובצה\"ל (Israel Defense Forces).",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התשובה נכונה ותואמת למקורות: TracePCB ו- Israel Defense Forces מופיעים כניסיון עבודה של Lavie.",
+          "error": null,
+          "injected_draft": false,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "S4",
+      "error": null,
+      "timestamp": "2026-11-25T13:21:15",
+      "num_attempts": 2,
+      "critic": "llm",
+      "note": "Attempt 1 is an injected flawed test draft (invented Wix job). Critic and revisions use the language model."
+    }
+  ]
+}
