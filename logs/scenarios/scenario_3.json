@@ -8,14 +8,14 @@
     {
       "question": "מה הממוצע שלך בתואר?",
       "status": "approved",
-      "message": "אין לי מידע על הממוצע שלי במקורות שעומדים לרשותי. אני יכול רק לציין שאני לומד Computer Science ב‑Reichman University, ושיש לי גם רקע בלימודי Computer Science ב‑The Open University of Israel.",
+      "message": "אין לי מידע על הממוצע שלי במקורות שעומדים לרשותי. אני כן יכול לומר שאני לומד Computer Science ב-Reichman University, ולפני כן למדתי קורסים במדעי המחשב ב-The Open University of Israel.",
       "attempts": [
         {
           "attempt": 1,
-          "candidate": "אין לי מידע על הממוצע שלי במקורות שעומדים לרשותי. אני יכול רק לציין שאני לומד Computer Science ב‑Reichman University, ושיש לי גם רקע בלימודי Computer Science ב‑The Open University of Israel.",
+          "candidate": "אין לי מידע על הממוצע שלי במקורות שעומדים לרשותי. אני כן יכול לומר שאני לומד Computer Science ב-Reichman University, ולפני כן למדתי קורסים במדעי המחשב ב-The Open University of Israel.",
           "evaluation_completed": true,
           "is_acceptable": true,
-          "feedback": "התשובה נכונה: אין במקורות מידע על הממוצע, והיא עונה על כך במפורש בלי לנחש.",
+          "feedback": "התגובה נכונה: אין במקורות מידע על ממוצע התואר, והיא גם נשענת על פרטי ההשכלה שמופיעים במקורות.",
           "error": null,
           "injected_draft": false,
           "decision": "accepted"
@@ -23,7 +23,7 @@
       ],
       "scenario_id": "S3",
       "error": null,
-      "timestamp": "2026-11-25T13:21:11",
+      "timestamp": "2026-11-25T13:46:06",
       "num_attempts": 1,
       "critic": "llm",
       "note": "GPA does not appear in linkedin.txt or summary.txt"

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "actor_model": "gpt-5.4-mini",
+    "critic_model": "gpt-5.4-mini",
+    "max_attempts": 3
+  },
+  "records": [
+    {
+      "question": "באיזו חברה עשית התמחות ומה עשית שם",
+      "status": "approved",
+      "message": "עשיתי התמחות ב-TracePCB כ-Software Engineer Intern, בין יולי 2026 לספטמבר 2026. שם בניתי אוטומציות מבוססות AI שחיברו בין monday.com API ל-Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, תכננתי workflows מונעי-אירועים ב-monday.com CRM לעיבוד נתונים, סנכרון רשומות ורצפי אימייל אוטומטיים, וגם בניתי workflow אוטומטי ליצירת לידים שסייע להרחיב את ה-sales pipeline.",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "עשיתי התמחות ב-TracePCB כ-Software Engineer Intern, בין יולי 2026 לספטמבר 2026. שם בניתי אוטומציות מבוססות AI שחיברו בין monday.com API ל-Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, תכננתי workflows מונעי-אירועים ב-monday.com CRM לעיבוד נתונים, סנכרון רשומות ורצפי אימייל אוטומטיים, וגם בניתי workflow אוטומטי ליצירת לידים שסייע להרחיב את ה-sales pipeline.",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התגובה מדויקת ומבוססת על המקורות: היא עונה ישירות על החברה והתפקיד, ומתארת את מה שעשיתי שם ללא תוספות לא נתמכות.",
+          "error": null,
+          "injected_draft": false,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "ui-1",
+      "error": null,
+      "timestamp": "2026-11-25T13:37:44",
+      "num_attempts": 1,
+      "critic": "llm",
+      "source": "ui"
+    },
+    {
+      "question": "וכמה זמן זה נמשך?",
+      "status": "approved",
+      "message": "זה נמשך 3 חודשים, מיולי 2026 עד ספטמבר 2026.",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "זה נמשך 3 חודשים, מיולי 2026 עד ספטמבר 2026.",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התגובה נכונה ומגובה במקורות: ההתמחות ב-TracePCB נמשכה 3 חודשים, מיולי 2026 עד ספטמבר 2026.",
+          "error": null,
+          "injected_draft": false,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "ui-2",
+      "error": null,
+      "timestamp": "2026-11-25T13:38:06",
+      "num_attempts": 1,
+      "critic": "llm",
+      "source": "ui"
+    },
+    {
+      "question": "מה הממוצע שלך בתואר?",
+      "status": "approved",
+      "message": "אין לי מידע על הממוצע שלך במקורות שעומדים לרשותי. אני כן יכול לומר שלמדת Computer Science ב-Reichman University, ושבמקורות מופיע גם שלמדת Computer Science ב-The Open University of Israel.",
+      "attempts": [
+        {
+          "attempt": 1,
+          "candidate": "אין לי מידע על הממוצע שלך במקורות שעומדים לרשותי. אני כן יכול לומר שלמדת Computer Science ב-Reichman University, ושבמקורות מופיע גם שלמדת Computer Science ב-The Open University of Israel.",
+          "evaluation_completed": true,
+          "is_acceptable": true,
+          "feedback": "התגובה נכונה: אין במקורות מידע על הממוצע, והיא עונה על השאלה בלי לנחש.",
+          "error": null,
+          "injected_draft": false,
+          "decision": "accepted"
+        }
+      ],
+      "scenario_id": "ui-3",
+      "error": null,
+      "timestamp": "2026-11-25T13:38:50",
+      "num_attempts": 1,
+      "critic": "llm",
+      "source": "ui"
+    }
+  ]
+}

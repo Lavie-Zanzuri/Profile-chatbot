@@ -12,7 +12,7 @@
       "attempts": [
         {
           "attempt": 1,
-          "candidate": "במהלך הקיץ של 2026 עבדתי כ‑Software Engineer Intern ב‑TracePCB. שם בניתי אוטומציות מבוססות AI שחיברו בין monday.com API ל‑Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, וגם תכננתי workflows מבוססי אירועים ב‑monday.com ל‑data processing, סנכרון רשומות ורצפי אימיילים אוטומטיים. בנוסף בניתי workflow אוטומטי ל‑lead generation שהרחיב את ה‑sales pipeline ותרם להגדלת המכירות.",
+          "candidate": "ב-TracePCB עבדתי כ-Software Engineer Intern ביולי–ספטמבר 2026. בניתי אוטומציות מבוססות AI שחיברו את monday.com API עם Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, וגם תכננתי workflows מבוססי events ב-monday.com CRM לעיבוד נתונים, סנכרון רשומות ורצפי אימיילים אוטומטיים. בנוסף, בניתי workflow אוטומטי ל-lead generation שסייע להרחיב את צינור המכירות ותרם להגדלת המכירות.",
           "evaluation_completed": true,
           "is_acceptable": false,
           "feedback": "[MOCK CRITIC] Control-flow test: every answer is rejected on purpose.",
@@ -22,7 +22,7 @@
         },
         {
           "attempt": 2,
-          "candidate": "במהלך הקיץ של 2026 עבדתי כ‑Software Engineer Intern ב‑TracePCB. שם בניתי אוטומציות מבוססות AI שחיברו בין monday.com API ל‑Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, ותכננתי workflows מבוססי אירועים ב‑monday.com ל‑data processing, סנכרון רשומות ורצפי אימיילים אוטומטיים. בנוסף בניתי workflow אוטומטי ל‑lead generation שהרחיב את ה‑sales pipeline ותרם להגדלת המכירות.",
+          "candidate": "ב-TracePCB עבדתי כ-Software Engineer Intern ביולי–ספטמבר 2026. במסגרת ההתמחות בניתי אוטומציות מבוססות AI שחיברו את monday.com API עם Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, תכננתי workflows מבוססי events ב-monday.com CRM לעיבוד נתונים, סנכרון רשומות ורצפי אימיילים אוטומטיים, וגם בניתי workflow אוטומטי ל-lead generation.",
           "evaluation_completed": true,
           "is_acceptable": false,
           "feedback": "[MOCK CRITIC] Control-flow test: every answer is rejected on purpose.",
@@ -32,7 +32,7 @@
         },
         {
           "attempt": 3,
-          "candidate": "במהלך הקיץ של 2026 עבדתי כ‑Software Engineer Intern ב‑TracePCB. שם בניתי אוטומציות מבוססות AI שחיברו בין monday.com API ל‑Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, ותכננתי workflows מבוססי אירועים ב‑monday.com ל‑data processing, סנכרון רשומות ורצפי אימיילים אוטומטיים. בנוסף בניתי workflow אוטומטי ל‑lead generation שהרחיב את ה‑sales pipeline ותרם להגדלת המכירות.",
+          "candidate": "ב-TracePCB עבדתי כ-Software Engineer Intern ביולי–ספטמבר 2026. בניתי אוטומציות מבוססות AI שחיברו את monday.com API עם Claude Code כדי לסנכרן ולהעשיר אלפי רשומות CRM, תכננתי workflows מבוססי events ב-monday.com CRM לעיבוד נתונים, סנכרון רשומות ורצפי אימיילים אוטומטיים, וגם בניתי workflow אוטומטי ל-lead generation.",
           "evaluation_completed": true,
           "is_acceptable": false,
           "feedback": "[MOCK CRITIC] Control-flow test: every answer is rejected on purpose.",
@@ -43,7 +43,7 @@
       ],
       "scenario_id": "S5",
       "error": null,
-      "timestamp": "2026-11-25T13:21:26",
+      "timestamp": "2026-11-25T13:46:18",
       "num_attempts": 3,
       "critic": "mock",
       "note": "CONTROL-FLOW TEST: mock Critic rejects every answer. Not a language-model evaluation."
